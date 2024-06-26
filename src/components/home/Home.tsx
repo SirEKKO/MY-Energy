@@ -5,12 +5,13 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { Avatar } from '../ui/avatar';
 import { User } from 'lucide-react';
+import homeImage from "@/components/home/home-image.png"
 
 const Home = () => {
   return (
     <div className="flex flex-col min-h-[100dvh] w-full">
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-indigo-500 to-[#1c1c1c] text-white">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-green-400 to-[#1c1c1c] text-white">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
@@ -26,7 +27,7 @@ const Home = () => {
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link
                     href="/login"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-white text-indigo-500 px-8 text-sm font-medium shadow transition-colors hover:bg-white/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                    className="inline-flex h-10 items-center justify-center rounded-md bg-white text-green-500 px-8 text-sm font-medium shadow transition-colors hover:bg-white/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
                     Start Trading
@@ -41,7 +42,7 @@ const Home = () => {
                 </div>
               </div>
               <Image
-                src="https://fastly.picsum.photos/id/130/600/600.jpg?hmac=DoqjTb2qtdt74LPacENUaJukVASYr4uFjPKRKbJ1TC4"
+                src={homeImage}
                 width="550"
                 height="310"
                 alt="Hero"
@@ -50,7 +51,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-indigo-500 to-[#1c1c1c] text-white">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-green-400 to-[#1c1c1c] text-white">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -66,11 +67,11 @@ const Home = () => {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <Image
-                src="https://fastly.picsum.photos/id/130/600/600.jpg?hmac=DoqjTb2qtdt74LPacENUaJukVASYr4uFjPKRKbJ1TC4"
+                src={homeImage}
                 width="550"
                 height="310"
-                alt="Image"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+                alt="Hero"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
               />
               <div className="flex flex-col justify-center space-y-4">
                 <ul className="grid gap-6">
@@ -104,7 +105,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-indigo-500 to-[#1c1c1c] text-white">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-green-400 to-[#1c1c1c] text-white">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -158,7 +159,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-indigo-500 to-[#1c1c1c] text-white">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-green-400 to-[#1c1c1c] text-white">
           <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">

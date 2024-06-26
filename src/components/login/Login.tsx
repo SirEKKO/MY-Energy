@@ -23,7 +23,7 @@ const Login = () => {
           </div>
         </CardContent>
         <CardFooter>
-          <Link href="/trade" className="w-full bg-black hover:bg-indigo-500 text-center rounded-lg py-2 duration-200 text-white">Sign in</Link>
+          <Link href="/trade" className="w-full bg-black hover:bg-green-400 text-center rounded-lg py-2 duration-200 text-white">Sign in</Link>
         </CardFooter>
       </Card>
     </main>

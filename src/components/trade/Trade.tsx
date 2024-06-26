@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { PlugZap2, Zap } from "lucide-react"
+import Link from "next/link"
 
 export default function Trade() {
   const traders = [
@@ -47,7 +48,7 @@ export default function Trade() {
     },
   ]
   return (
-    <div className="w-full bg-gradient-to-r from-indigo-500 to-[#1c1c1c] text-white min-h-screen flex flex-col items-center justify-center px-4 py-8">
+    <div className="w-full bg-gradient-to-r from-green-400 to-[#1c1c1c] text-white min-h-screen flex flex-col items-center justify-center px-4 py-8">
       <div className="flex flex-row w-[800px] mb-32">
         <div className="border-[1px] rounded-s-lg border-white w-1/2 py-6 flex flex-row gap-2 justify-center">
           <Zap />
@@ -65,14 +66,14 @@ export default function Trade() {
             key={trader.id}
             className="rounded-lg shadow-3xl overflow-hidden"
           >
-            <div className="p-6">
+            <div className="p-6 flex flex-col">
               <h2 className="text-xl font-bold mb-2 text-white">{trader.name}</h2>
               <p className="text-gray-200 mb-4"><span className="font-semibold">Owned energy:</span> {trader.ownedEnergy}kwh</p>
               <p className="text-gray-200 mb-4"><span className="font-semibold">Used energy:</span> {trader.usedEnergy}kwh</p>
               <p className="text-gray-200 mb-4"><span className="font-semibold">Distance:</span> {trader.distance}km</p>
-              <Button className="w-full bg-black hover:bg-indigo-500 duration-300 text-white">
+              <Link href="/tradeEnergy" className="w-full bg-black hover:bg-green-500 duration-300 text-white py-2 rounded-lg text-center">
                 Trade
-              </Button>
+              </Link>
             </div>
           </div>
         ))}
