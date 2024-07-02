@@ -21,7 +21,7 @@ const TradeEnergy = () => {
   }
 
   return (
-    <div className="w-full bg-gradient-to-r from-green-400 to-[#1c1c1c] text-white min-h-screen flex flex-col items-center justify-center px-4 py-8 gap-24">
+    <div className="w-full bg-gradient-to-r from-green-700 to-[#1c1c1c] text-white min-h-screen flex flex-col items-center justify-center px-4 py-8 gap-24">
       <div className="border-[1px] rounded-lg border-white w-1/2 py-6 flex flex-row justify-center items-center gap-5">
         <p className='text-xl'><span className='font-bold'>1000 KWH =</span> 0.001 ETH</p>
         <Image width={20} height={20} src="ethereum-eth-logo.svg" alt='eth icon' />

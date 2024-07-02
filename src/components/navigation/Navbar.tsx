@@ -4,7 +4,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <header className="px-4 lg:px-6 h-14 flex items-center bg-gradient-to-r from-green-400 to-[#1c1c1c] text-white">
+    <header className="px-4 lg:px-6 h-14 flex items-center bg-gradient-to-r from-green-700 to-[#1c1c1c] text-white">
       <Link href="#" className="flex items-center justify-center" prefetch={false}>
         <BoltIcon className="h-6 w-6 text-white" />
         <span className="sr-only">MyEnergy</span>

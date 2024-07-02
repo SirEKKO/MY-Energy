@@ -48,7 +48,7 @@ export default function Trade() {
     },
   ]
   return (
-    <div className="w-full bg-gradient-to-r from-green-400 to-[#1c1c1c] text-white min-h-screen flex flex-col items-center justify-center px-4 py-8">
+    <div className="w-full bg-gradient-to-r from-green-700 to-[#1c1c1c] text-white min-h-screen flex flex-col items-center justify-center px-4 py-8">
       <div className="flex flex-row w-[800px] mb-32">
         <div className="border-[1px] rounded-s-lg border-white w-1/2 py-6 flex flex-row gap-2 justify-center">
           <Zap />
